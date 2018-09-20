@@ -12,8 +12,7 @@ const debtSchema = new mongoose.Schema({
   status: {
     type: String,
     required: true,
-    lowercase: true,
-    enum: ['PAID', 'PENDING', 'SCHENDULED', 'CANCEL']
+    enum: ['paid', 'pending', 'schenduled', 'cancel']
   }
 })
 
